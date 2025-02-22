@@ -1,0 +1,30 @@
+.wrapper {
+  display: inline-block;
+  border: 2px solid #222224bd;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}
+.img {
+  margin-bottom: 12px;
+}
+.nickName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #222224bd;
+  margin-bottom: 8px;
+}
+.status {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.online {
+  color: #13db56bd;
+}
+.offline {
+  color: #f33615bd;
+}

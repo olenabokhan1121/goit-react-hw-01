@@ -4,23 +4,23 @@ export default function Profile(props) {
     <div className={css.container}>
       <div>
         <img className={css.img} src={props.image} alt="User avatar" />
-        <p>{props.name}</p>
-        <p>{props.tag}</p>
-        <p>{props.location}</p>
+        <p className={css.userName}>{props.name}</p>
+        <p className={css.text}>{props.tag}</p>{' '}
+        <p className={css.text}>{props.location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{props.stats.followers}</span>
+      <ul className={css.list}>
+        <li className={css.listItem}>
+          <span className={css.listText}>Followers</span>
+          <span className={css.listData}>{props.stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{props.stats.views}</span>
+        <li className={css.listItem}>
+          <span className={css.listText}>Views</span>
+          <span className={css.listData}>{props.stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{props.stats.likes}</span>
+        <li className={css.listItem}>
+          <span className={css.listText}>Likes</span>
+          <span className={css.listData}>{props.stats.likes}</span>
         </li>
       </ul>
     </div>

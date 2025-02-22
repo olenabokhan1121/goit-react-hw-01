@@ -1,0 +1,33 @@
+/* Общие стили для таблицы */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Убираем двойные границы между ячейками */
+
+  font-family: Arial, sans-serif;
+  margin-bottom: 80px;
+}
+
+.table th,
+.table td {
+  padding-top: 8px; /* Отступы в ячейках */
+  padding-bottom: 8px;
+
+  border: 2px solid #0f0f0f; /*  границы между ячейками */
+}
+
+.table th {
+  background-color: #524c4c; /* фон для заголовков */
+  color: #f4f4f4; /* Цвет текста  */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.table td {
+  text-align: center;
+  color: #0e0d0d; /* Цвет текста данных */
+  font-weight: bold;
+}
+
+/* Чередование фонов для строк */
+.table tr:nth-child(even) {
+  background-color: #b3adad; /* Светло-серый фон для четных строк */
+}
